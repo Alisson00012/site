@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #4d4d4d;
+}
+
+h1, h2{
+    margin: 0;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+h3{
+    margin: 0;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px #ccc, 0 0 15px aliceblue;
+
+}
+
+
+
+/*
+NAVEGAÇÃO
+*/
+
+nav {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+}
+
+nav > a {
+    text-decoration: none;
+    list-style: none;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: Pacifico, serif, arial;
+}
+
+nav ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+nav ul li {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    color: #f1f1f1;
+}
+li a:hover {
+    text-decoration: none;
+    list-style: none;
+    background-color:  aliceblue;
+    color: #111;
+  }
+/*
+SOBRE
+*/
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    color: #f1f1f1;
+}
+
+#sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+/*
+SERVIÇOS
+*/
+
+#servicos {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+/*
+PROJETOS
+*/
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.projetos img{
+    width: 300px;
+    height: 340px;
+}
+
+/*
+TABELA
+*/
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: #ebf1f1;
+  }
+/*
+FOOTER
+*/
+
+footer {
+    margin-top: 140px;
+    text-align: center;
+    padding: 10px;
+    background-color:#000;  
+    color: #fff;
+}
+
+/*
+MEDIA QUERIES
+*/
+
+@media screen and (min-width: 768px) {
+    /*
+    NAVEGAÇÃO
+    */
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+    
+    /*
+    CABEÇALHO
+    */
+    
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    
+    /*
+    SOBRE
+    */
+    
+    #sobre {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+    /*
+    SERVIÇOS
+    */
+    
+    #servicos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    #servicos h2 {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #servicos div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }    
+
+    /*
+    projeto
+    */
+    #servicos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    #servicos h2 {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #servicos div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }    
+    /*
+    CONTATO
+    */
+    
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    #contato h2,
+    #contato p {
+        width: 100%;
+    }
+    
+}

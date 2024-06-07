@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Endereço IP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style6.css">
+</head>
+<body>
+       <!-- MENU abaixo -->
+       <nav>
+        <h3>Sistemas Operacionais</h3>
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="PagWindows.html">Windows</a></li>
+              <li><a href="PagLinux.html">Linux</a></li>
+              <li><a href="PagMac.html">MAC</a></li>
+              <li><a href="enderecoIP.html">Endereço IP</a></li>
+              <li><a href="contato.html">Contato</a></li>
+          </ul>
+      </nav>
+    <!-- Carosel abaixo -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators" style=" color: black;">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/banner2.png" height="500px" height="450px" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="./img/banner7.png" height="500px" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="./img/BANNER5.jpeg" height="500px" alt="Terceiro Slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="./img/banner4.png" height="500px" alt="quarto Slide">
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    </header>
+    <section id="sobre">
+            <h2>Sobre o IP</h2>
+            <p>Um Endereço de Protocolo da Internet (Endereço IP), do inglês Internet Protocol address (IP address), é um rótulo numérico atribuído a cada dispositivo (computador, impressora, smartphone etc.) conectado a uma rede de computadores que utiliza o Protocolo de Internet para comunicação. Um endereço IP serve a duas funções principais: identificação de interface de hospedeiro ou de rede e endereçamento de localização.</p>
+        
+    </section>
+    <section id="servicos">
+            <div>
+                <h2>Como descobrir seu endereço IP no<br>
+                    Windows, Linux.</h2>
+            </div>
+    </section>
+    <section>
+            <div class="texto1">
+                <p>
+                    Uma tarefa bastante comum e importante, realizada com frequência é a consulta aos endereços de rede usados pelos dispositivos – o endereço IP – quer seja para realizar manutenção de redes e conexões com falha quer seja para realizar configurações e inventário de redes, locais ou remotas.
+                    <br><br>
+                    Porém, cada dispositivo pode empregar um sistema operacional distinto, e o modo de realizar a consulto do IP pode variar bastante de um sistema para outro. Por exemplo, um PC desktop convencional pode usar o sistema operacional Windows, ao passo que um servidor por empregar Linux.
+                    <br><br>
+                    Como descobrir o IP em cada um desses sistemas – ou em outros? É disso que se trata esse artigo. Vou mostrar como descobrir o endereço IP em diversos sistemas operacionais diferentes: Linux, Windows,veja os procedimentos necessários a cada um deles. 
+                    <br><br>
+                </p>
+                <h2>Como descobrir o endereço IP no Windows</h2>
+                <br>
+                <p>Para consultar o IP de uma máquina Windows abra o Prompt de Comandos do sistema digitando cmd na caixa de pesquisa e pressionando Enter. No prompt aberto, execute o comando ipconfig:</p>
+                <img src="img/modeloIP1.png" alt="Buscar IP">
+                <br><br>
+                <p>
+                    As linhas “Endereço IPv6 de link local” e “Endereço IPv4” mostram, respectivamente, os endereços IPv6 e IPv4 de suas interfaces de rede (adaptadores Ethernet), incluindo placas de rede sem fio (adaptadores Wi-Fi), se houver alguma na máquina.
+                    <br><br>
+                    Informações adicionais como a máscara de sub-rede e o gateway padrão também são exibidas com esse comando.
+                    <br><br>
+                </p>
+                <img src="img/modeloIP2.png" alt="">
+                <p>
+                        No exemplo acima, meu endereço IPv4 é 192.168.1.109, com máscara de sub-rede 255.255.255.0 e gateway padrão (roteador) 192.168.1.1. Também é mostrado o endereço IPv6 atribuído á interface de rede.
+                        <br><br>
+                        Esse mesmo comando também funciona no terminal do Windows PowerShell, exibindo exatamente as mesmas informações.
+                </p>
+                <br><br>
+                <h2>Forma gráfica</h2>
+                <br>
+                <p>
+                    Em vez de usar comandos do prompt, também podemos verificar os endereços IP no Windows por meio de sua interface gráfica.
+                    <br>
+                    Para isso, clique no ícone de rede na barra de notificações:
+                </p>
+                <img src="img/modeloIP3.png" alt="">
+                <p>
+                    Será aberto um menu suspenso com as opções de conexão de rede disponíveis, com e sem fio, incluindo as redes às quais a máquina está conectada no momento (no meu caso, “Rede 3 – Conectado”):
+                </p>
+                <img src="img/modeloIP4.png" alt="">
+                <p>
+                    Clique na rede cujo endereço IP deseja consultar. Será aberta a janela de Configurações do sistema, exibindo as redes conectadas:
+                </p>
+                <img src="img/modeloIP5.png" alt="">
+                <p>
+                    Clique na rede desejada novamente. Na janela seguinte, role a tela até chegar na seção “Propriedades”, onde você encontrará as configurações de rede da interface selecionada, incluindo os endereços IP:
+                </p>
+                <img src="img/modeloIP6.png" alt="">
+            </div>
+            <div class="texto2">
+                <h2>
+                    Já para consultar o endereço IP no Linux, abra o Terminal (linha de comandos) de sua distribuição e digite o seguinte comando:
+                </h2>
+                <img src="img/modeloIP7.png" alt="">
+                <br>
+                <p>
+                    Serão exibidas várias informações no terminal, incluindo os endereços IP da máquina, como mostra a figura a seguir:
+                </p>
+                <img src="img/modeloIP8.png" alt="">
+                <p>
+                    No meu exemplo, o endereço IPv4 aparece na linha iniciada por “inet” e o IPv6 na linha “inet6“. 
+                    <br>
+                    Serão exibidos endereços para cada interface de rede, sendo a interface lo a interface de loopback, e (no meu exemplo) a interface enp0s3 é a placa de rede propriamente dita.
+                </p>
+                <h2>Forma gráfica</h2>
+                <p>
+                    Descobrir o IP de uma máquina no Linux usando a interface gráfica é um procedimento que pode variar de uma distribuição para outra, dependendo de qual interface está sendo utilizada (Gnome, Mate, Xfce, etc.).
+                    <br>
+                    No exemplo mostrado nas telas a seguir, uso a distribuição Linux Mint com a interface Cinnamon:
+                    <br>
+                    1. No canto inferior esquerdo da tela, clique no ícone de rede e então na opção Configurações de rede:
+                    <br><br>
+                    <img src="img/modelo9IP.png" alt="">
+                </p>
+                <p>
+                    2.  Será aberta a tela de configurações de rede. Na guia Wired são exibidas essas configurações, incluindo os endereços IP utilizados (tanto IPv4 quanto IPv6). O mesmo vale para interfaces de rede sem fio, que aparecerão na guia apropriada:
+                </p>
+                <img src="img/modeloIP10.png" alt="">
+            </div>
+    </section>
+    <aside>
+
+    </aside>
+    <footer>
+            <p>Desenvolvido por Alisson Voros, Kayky Barcellos e Gabriely Vieira.</p>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>
